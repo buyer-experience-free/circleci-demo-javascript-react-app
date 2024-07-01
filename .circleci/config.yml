@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: cimg/node:current
     steps:
-      - run: openssh -v || true
+      - run: ssh -V || true
     
       - checkout # special step to check out source code to working directory
 
